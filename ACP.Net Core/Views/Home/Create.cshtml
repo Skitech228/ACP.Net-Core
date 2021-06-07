@@ -1,0 +1,25 @@
+﻿@model ACP.Net_Core.Models.Entity.Visitor
+@{
+    ViewBag.Title = "Visitor Add";
+}
+<form asp-action="Create" asp-controller="Home">
+    <div class="form-group">
+        <label asp-for="First_Name" class="control-label">First Name</label>
+        <input type="text" asp-for="First_Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Sekond_Name" class="control-label">Sekond Name</label>
+        <input type="text" asp-for="Sekond_Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Patronymic" class="control-label">Patronymic</label>
+        <input type="text" asp-for="Patronymic" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone_Number" class="control-label">Phone Number</label>
+        <input type="text" asp-for="Phone_Number" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Conferm visitor" class="btn btn-default"/>
+    </div>
+</form>

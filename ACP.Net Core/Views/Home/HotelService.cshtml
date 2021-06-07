@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ACP.Net_Core.Models.Entity.Visitor>
+@{
+    ViewBag.Title = "All Visitors";
+}
+<a asp-action="Create">Add user</a>
+<table class="table">
+    <tr><td>ID</td><td>First name</td><td>Sekond Name</td><td>Patronymic</td><td>Phone Number</td></tr>
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.Passport_Number</td><td>@item.First_Name</td><td>@item.Sekond_Name</td><td>@item.Patronymic</td><td>@item.Phone_Number</td></tr>
+    }
+</table>
